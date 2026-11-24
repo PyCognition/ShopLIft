@@ -1,61 +1,111 @@
-# ShopLIft — AI-Powered E-Commerce Website
+# ShopLIft — AI-Powered Multi-Category Marketplace
 
-ShopLIft is a responsive, eight-page, multi-category marketplace demonstration built with HTML5, CSS3 and vanilla JavaScript. It is designed for a beginner AI-powered web development assignment and can be hosted as a static site using GitHub Pages.
+**Good finds. Better everyday.**
 
-## Store concept
+ShopLIft is a responsive, eight-page e-commerce marketplace demonstration created for an AI-powered web development assignment. It uses HTML5, CSS3 and vanilla JavaScript, with product data and cart state handled in the browser.
 
-**ShopLIft — Good finds. Better everyday.**
+## Store categories
 
-Categories: Electronics, Fashion, Home & Kitchen, Beauty, Books & Stationery, and Sports & Fitness. Product prices use Indian Rupees (₹).
+- Electronics
+- Fashion
+- Home & Kitchen
+- Beauty
+- Books & Stationery
+- Sports & Fitness
 
-## Pages
+Prices are illustrative sample prices in Indian Rupees (₹). The project includes 12 sample products.
 
-1. `index.html` — home, category links and featured products
-2. `products.html` — search, category filtering and sorting
-3. `product.html` — product details (`?id=product-id`)
-4. `cart.html` — add/remove/update items and totals
-5. `checkout.html` — validated demo delivery form and sample order summary
-6. `about.html` — project and brand information
-7. `contact.html` — validated demonstration contact form
-8. `login.html` — login and signup form demonstrations
+## Website pages
 
-## Files
+| Page | File | Purpose |
+|---|---|---|
+| Home | `index.html` | Marketplace landing page and featured products |
+| Shop | `products.html` | Product catalogue, search, category filtering and sorting |
+| Product details | `product.html` | Selected product information and quantity selector |
+| Cart | `cart.html` | View items, change quantities and remove items |
+| Checkout | `checkout.html` | Validated demonstration checkout |
+| About | `about.html` | Project concept and technology overview |
+| Contact | `contact.html` | Demonstration contact form |
+| Account | `login.html` | Login and account-creation form demonstrations |
 
-- `styles.css` — shared responsive styling
-- `script.js` — product catalogue, search/filter/sort, cart, localStorage, form handling and navigation
-- `assets/images/` — locally hosted SVG product illustrations
-- `ShopLIft_AI_Development_Prompt.txt` — the master prompt used to define the project requirements
+## Technology
 
-## Run locally in VS Code
+- **HTML5** — page structure and semantic content
+- **CSS3** — responsive layouts, styling, grid, flexbox and transitions
+- **Vanilla JavaScript** — product rendering, search, filters, sorting, navigation, form validation and cart interactions
+- **localStorage** — keeps the sample cart in the current browser
+- **SVG** — locally stored sample product illustrations and favicon
 
-1. Extract the ZIP file.
-2. Open the extracted `ShopLIft_Website` folder in Visual Studio Code (**File → Open Folder**).
-3. Open the Extensions panel and install **Live Server**.
-4. Open `index.html` and click **Go Live** in the bottom status bar.
-5. Test the navigation, category links, search, filters, sorting, product details, add-to-cart, cart quantity buttons, remove, checkout validation, contact form and login/signup tabs.
+No build tools, package installation, framework or backend server are required.
 
-The cart is stored in this browser using `localStorage`. Clearing browser site data will clear the sample cart.
+## Project structure
+
+```text
+ShopLIft/
+├── index.html
+├── products.html
+├── product.html
+├── cart.html
+├── checkout.html
+├── about.html
+├── contact.html
+├── login.html
+├── styles.css
+├── script.js
+├── README.md
+├── ShopLIft_AI_Development_Prompt.txt
+└── assets/
+    ├── favicon.svg
+    └── images/ (12 sample product SVG illustrations)
+```
+
+## Run locally
+
+1. Download or clone this repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html`.
+4. Start the page with the VS Code **Live Server** extension, or open the HTML file directly in a browser.
+5. Browse categories, search for products, open product details and try the cart.
 
 ## Publish with GitHub Pages
 
-1. Sign in to GitHub and create a new public repository named `shoplift-marketplace` (or another available name).
-2. Extract the ZIP. Open the `ShopLIft_Website` folder and upload its **contents** to the repository root. Do not upload only the outer ZIP file. `index.html` must be at the repository root.
-3. In the repository, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch **main** and folder **/(root)**, then click **Save**.
-6. Wait for the deployment status to become successful and open the website URL shown in the Pages settings. A project site URL normally follows `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
+1. Open this repository on GitHub.
+2. Go to **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select branch **main** and folder **/(root)**, then save.
+5. Wait for GitHub Pages to finish its deployment. The public URL will be shown in the Pages settings. It normally follows this pattern:
 
-## Important scope note
+   `https://pycognition.github.io/ShopLIft/`
 
-This is a static front-end learning project. Login and signup do not authenticate users. The contact form does not send messages. Checkout does not take payment or create a server-side order. Product information is sample data in JavaScript and is not connected to live inventory. A production marketplace needs a secure backend, database, authentication, payment provider, inventory and order management. GitHub Pages hosts the static front end; it does not run a Node.js/Express backend.
+The repository root contains `index.html`, so the root publishing folder is the correct source.
 
-## Assignment evidence to capture
+## Important demo limitations
 
-- ShopLIft homepage in desktop view
-- Product listing with a category filter applied
-- Product detail page
-- Cart showing at least two items and changed quantity
-- Checkout validation and demo confirmation
-- Mobile/responsive layout
-- GitHub repository file list
-- GitHub Pages Settings showing deployment source and the live public website
+This is a **front-end learning demonstration**, not a production online store.
+
+- Login and signup forms only demonstrate browser-side validation; they do not create accounts or authenticate users.
+- The contact form displays a demo confirmation; it does not send or store messages.
+- Checkout displays a sample confirmation; it does not process payments or create a server-side order.
+- Product data, prices, stock and ratings are sample data, not live inventory.
+- The cart is stored in the browser using `localStorage`; clearing browser site data removes it.
+- No customer personal or payment information should be entered.
+
+A production marketplace would require a secure backend, database, authentication, payment integration, inventory management and order processing.
+
+## Assignment evidence checklist
+
+- [ ] Desktop homepage
+- [ ] Product listing with a category filter
+- [ ] Search results
+- [ ] Product details
+- [ ] Cart with quantity changes
+- [ ] Checkout demo and form validation
+- [ ] Login/signup validation demonstration
+- [ ] Contact form demo confirmation
+- [ ] Mobile/responsive layout
+- [ ] GitHub repository root showing all project files
+- [ ] GitHub Pages settings and deployed public URL
+
+---
+
+Built as a learning project using HTML, CSS and JavaScript.
