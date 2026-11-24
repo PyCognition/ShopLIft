@@ -1,0 +1,86 @@
+SHOPLIFT — MASTER AI WEB DEVELOPMENT PROMPT
+
+ROLE
+You are an expert front-end web developer and UI/UX designer. Build a complete, polished, responsive multi-page e-commerce marketplace website using only HTML5, CSS3 and vanilla JavaScript. Use AI-assisted “vibe coding” to generate clean, understandable code for a beginner who will open, run, inspect and deploy it using Visual Studio Code and GitHub Pages.
+
+PROJECT
+Brand name: ShopLIft (preserve this exact capitalization)
+Business concept: Amazon-style multi-category marketplace for an Indian audience
+Tagline: “Good finds. Better everyday.”
+Currency: Indian Rupees (INR / ₹)
+Categories: Electronics; Fashion; Home & Kitchen; Beauty; Books & Stationery; Sports & Fitness
+Hosting target: GitHub Pages (static hosting)
+
+IMPORTANT TECHNICAL CONSTRAINTS
+1. Use only HTML, CSS and vanilla JavaScript. Do not use React, Node.js, Express, MongoDB, a build tool, npm packages or a server-side backend.
+2. The website must work as a static site when hosted from a GitHub repository root on GitHub Pages.
+3. Use relative asset and page links. Do not use root-absolute paths such as /assets/... because GitHub project sites are hosted below a repository path.
+4. Do not require API keys, paid services, database credentials or external checkout providers.
+5. Use a shared styles.css and script.js. Load script.js with defer.
+6. Keep product data in a JavaScript array/object inside script.js (or a separate local data file only if the file is included and works without a build step).
+7. Use a local assets/images folder. Provide sensible local image placeholders or original SVG illustrations; do not leave broken placeholder URLs.
+8. Write semantic, accessible HTML with labels, alt text, clear focus styles and keyboard-friendly controls.
+
+REQUIRED EIGHT PAGES
+1. index.html — marketplace home page with brand header, search, hero, category tiles and featured products.
+2. products.html — product catalogue with category filtering, text search and sorting.
+3. product.html — product details. Select the product using a URL query parameter such as product.html?id=nova-phone.
+4. cart.html — shopping cart with item thumbnails, quantities, remove controls, subtotal, delivery and total.
+5. checkout.html — sample delivery form with browser validation and an order summary.
+6. about.html — about ShopLIft and the project concept.
+7. contact.html — contact form with front-end validation and a clear demo confirmation.
+8. login.html — login and sign-up demonstration forms.
+
+DESIGN DIRECTION
+Create a modern, clean and friendly Indian online marketplace identity. Use deep navy for structure, warm orange as the accent, light neutral backgrounds, readable typography, generous spacing, rounded product cards and consistent buttons. The layout must adapt to desktop, tablet and mobile screens. Include a responsive navigation bar with a hamburger menu on small screens and a consistent footer on all pages. Make the homepage look like a credible marketplace, but do not copy Amazon logos, trademarks or exact page artwork.
+
+PRODUCT CATALOGUE
+Include at least 12 realistic sample products spread across all six categories. Each product should have a unique id, name, category, price in INR, previous price (optional), rating, review count, short description, local image path and optional badge. Product information must be used consistently in listings, detail pages, cart and checkout.
+
+FUNCTIONAL REQUIREMENTS
+- Navigation links work between all eight pages.
+- Search filters products by name, category or description.
+- Category filter works, including category links from the home page.
+- Sorting includes featured/default, price low-to-high, price high-to-low and rating.
+- Product detail pages load the correct product from its query parameter and handle an unknown id gracefully.
+- Add to cart works from product cards and product detail pages.
+- Cart data persists across pages and browser refresh using localStorage.
+- Cart supports increasing/decreasing quantity and removing items.
+- Cart count in the header updates on every page.
+- Subtotal, delivery and total calculations are correct and consistently formatted in INR.
+- Checkout validates required sample delivery fields and shows a simulated success state.
+- Contact and account forms validate input and show a clear demo-only confirmation.
+- Provide a toast/notification for important interactions.
+- All controls must have real behaviour; do not include decorative non-working buttons.
+
+SAFETY AND SCOPE
+This is a front-end learning demonstration only. Do not collect payment information, process real payments, claim to authenticate users, save passwords, store personal details, or pretend to create a real order. Clearly label checkout, login/signup and contact functions as demonstrations. State in README that real authentication, payments, inventory, customer records and order processing require a secure backend and suitable services.
+
+OUTPUT FILE STRUCTURE
+ShopLIft/
+  index.html
+  products.html
+  product.html
+  cart.html
+  checkout.html
+  about.html
+  contact.html
+  login.html
+  styles.css
+  script.js
+  assets/
+    images/
+    favicon.svg
+  README.md
+
+CODE QUALITY
+- Use readable variable and function names.
+- Add concise comments for key JavaScript logic and CSS sections.
+- Avoid duplicated business logic where a shared function is suitable.
+- Validate and clamp cart quantities.
+- Handle missing or invalid localStorage data safely.
+- Make sure every page references the same shared stylesheet and script.
+- Make sure the website works when opened in a subdirectory on GitHub Pages.
+
+HOW TO RESPOND
+First show the complete folder structure. Then provide the full code for every file, clearly labelled by filename. Do not omit code or use “same as above” placeholders. Explain how to create the files in VS Code, run with Live Server, test every required feature, create a GitHub repository, upload the project files, and enable GitHub Pages from Settings → Pages → Deploy from a branch → main → /(root). End with a pre-submission checklist and explain that GitHub Pages hosts the static front end only.
